@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Tim Stephansen",
+    "classifications": [ "WPF", "UserControl", "Code" ],
+    "description": "Creates a new WPF UserControl",
+    "identity": "LandmarkDevs.Templates.Wpf.UserControl",
+    "name": "WPF UserControl Template",
+    "primaryOutputs": [
+        {
+            "path": "UserControlTemplate.xaml"
+        },
+        {
+            "path": "UserControlTemplate.xaml.cs"
+        }
+    ],
+    "shortName": "wpfusercontrol",
+    "sourceName": "WpfUserControl",
+    "symbols": {
+        "namespace": {
+            "type":"parameter",
+            "replaces":"Project.Namespace",
+            "datatype": "text",
+            "description": "The namespace for the project."
+        },
+        "filename":{
+            "type":"parameter",
+            "datatype":"text",
+            "fileRename":"UserControlTemplate",
+            "replaces":"UserControlTemplate",
+            "isRequired": true,
+            "defaultValue":"MyUserControl"
+        }
+    },
+    "tags": {
+      "language": "XAML",
+      "type": "item"
+    }
+  }
